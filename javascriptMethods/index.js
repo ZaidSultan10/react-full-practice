@@ -18,5 +18,18 @@ const getBook = (id) => {
     return data.find(d => d.id === id)
 } 
 
-const book = getBook(2)
-console.log(book.title)
+const {title, id, author} = getBook(1)
+console.log(title)
+
+// spread and rest operator
+
+let arr = ["a", "b", "c", "d"]
+let g = ["g"]
+
+console.log('arr --',[...arr, ...g])
+
+let obj = {
+    time : "23",
+    name : "zaid"
+}
+console.log({...obj, place:"lahore", name:"zaid new"})
