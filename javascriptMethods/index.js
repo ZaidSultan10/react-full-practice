@@ -33,3 +33,34 @@ let obj = {
     name : "zaid"
 }
 console.log({...obj, place:"lahore", name:"zaid new"})
+
+const dataPure = null
+console.log("data is ",dataPure ?? "Pure false")
+
+const redArr = [{
+    id: 1,
+    value : 20,
+},{
+    id: 2,
+    value : 30,
+},{
+    id: 3,
+    value : 50,
+}]
+
+let finalValue = redArr.reduce((acc, val) => acc + val.value, 0)
+console.log(finalValue)
+
+const srArr = [{
+    id: 3,
+    value : 101,
+},{
+    id: 1,
+    value : 30,
+},{
+    id: 2,
+    value : 50,
+}]
+
+let sortArr = srArr.sort((a,b) => {return a.value - b.value})
+console.log(sortArr)
