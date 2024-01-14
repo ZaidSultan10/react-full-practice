@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Pizza from './components/Pizza';
 
 function App() {
   return (
     <div className="App">
-      <p>Pure prosp</p>
+      <Pizza />
     </div>
   );
 }
