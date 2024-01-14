@@ -7,10 +7,10 @@ const Pizza = () => {
   return (
     <div>
         <div>
-            <Heading />
+            <Heading heading={`-- FAST REACT PIZZA CO. --`} />
         </div>
         <div>
-            <Heading />
+            <Heading heading={`OUR MENU`} hasLines={true} />
         </div>
         <div>
             <Paragraph />
