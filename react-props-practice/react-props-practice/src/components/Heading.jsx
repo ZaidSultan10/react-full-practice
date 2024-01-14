@@ -1,8 +1,22 @@
 import React from 'react'
 
-const Heading = () => {
+const Heading = ({heading, hasLines}) => {
   return (
-    <div>Heading</div>
+    <div>
+        {hasLines && (
+            <div>
+                <hr />
+            </div>
+        )}
+        <div>
+            <h3>{heading}</h3>
+        </div>
+        {hasLines && (
+            <div>
+                <hr />
+            </div>
+        )}
+    </div>
   )
 }
 
