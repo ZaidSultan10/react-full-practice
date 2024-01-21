@@ -10,7 +10,7 @@ const Pizza = () => {
             <Heading heading={`-- FAST REACT PIZZA CO. --`} />
         </div>
         <div>
-            <Heading heading={`OUR MENU`} hasLines={true} lineWidth = {`60px`} />
+            <Heading heading={`OUR MENU`} hasLines={true} lineWidth = {`61px`} />
         </div>
         <div>
             <Paragraph />
