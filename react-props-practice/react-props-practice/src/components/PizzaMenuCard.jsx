@@ -6,13 +6,13 @@ const PizzaMenuCard = ({id, image, name, price, currency, ingredients, isSoldOut
         <div style={{height:'100%'}}>
             <img src={image} height={80} width={80} style={{borderRadius : '8px'}} />
         </div>
-        <div style={{display:'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
+        <div style={{display:'flex', flexDirection:'column', justifyContent:'space-evenly',marginLeft:'8px'}}>
             <div>
               <h4  style={{fontSize : '16px'}}>{name}</h4>
               <p style={{fontSize : '10px'}}>{ingredients}</p>
             </div>
             <div style={{marginTop:'8px'}}>
-              <p style={{fontSize : '10px'}}>{isSoldOut ? `Sold Out` : `${currency} ${price}`}</p>
+              <p style={{fontSize : '14px'}}>{isSoldOut ? `Sold Out` : `${currency} ${price}`}</p>
             </div>
         </div>
     </div>
