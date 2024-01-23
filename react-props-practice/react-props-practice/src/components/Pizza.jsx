@@ -5,7 +5,7 @@ import PizzaMenu from './PizzaMenu'
 
 const Pizza = () => {
   return (
-    <div>
+    <div style={{display:'flex', justifyContent:'space-evenly', alignItems:'center', flexDirection:'column',height:'100%'}}>
         <div>
             <Heading heading={`-- FAST REACT PIZZA CO. --`} />
         </div>
@@ -13,13 +13,13 @@ const Pizza = () => {
             <Heading heading={`OUR MENU`} hasLines={true} lineWidth = {`60px`} />
         </div>
         <div>
-            <Paragraph />
+            <Paragraph title={`Authentic Pizzas`} />
         </div>
         <div>
             <PizzaMenu />
         </div>
         <div>
-            <Paragraph />
+            <Paragraph title={`Open till 22:00`} />
         </div>
     </div>
   )

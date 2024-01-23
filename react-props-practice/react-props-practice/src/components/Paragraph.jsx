@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Paragraph = () => {
+const Paragraph = ({title}) => {
   return (
-    <div>Paragraph</div>
+    <div>
+      <h4>{title}</h4>
+    </div>
   )
 }
 
