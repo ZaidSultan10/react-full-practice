@@ -8,32 +8,24 @@ import Warning from '../components/Warning'
 const Proejcts = () => {
     const [projectButton, setProjectButton] = useState('')
     const renderSwitch = (param) => {
-        if(param === 'Reset'){
-            setProjectButton('')
-        }else{
-            switch(param) {
-              case 'StepForm':
+        switch(param) {
+            case 'StepForm':
                 return (<StepForm />);
-              case 'DateCounter':
+            case 'DateCounter':
                 return (<DateCounter />);
-              default:
+            default:
                 return (<Warning message = {`Please Click On Any Project To View It's Details`} />);
-            }
         }
       }
   return (
     <section className='projects'>
         <div className='projects__buttons'>
             {projectButtons && projectButtons.map(button => (
-                <button key={button.id ? button.id : 'no-key'} onClick={() => setProjectButton(button.name)} className='projects__each__button'>{button.name}</button>
+                <button key={button.id ? button.id : 'no-key'} onClick={() => button.id ? setProjectButton(() => button.name) : setProjectButton('')} className='projects__each__button'>{button.name}</button>
             ))}
         </div>
         {
-            !projectButton ? (
-                <Warning message = {`Please Click On Any Project To View It's Details`} />
-            ) : (
-                renderSwitch(projectButton)
-            )
+            renderSwitch(projectButton)
         }
     </section>
   )
