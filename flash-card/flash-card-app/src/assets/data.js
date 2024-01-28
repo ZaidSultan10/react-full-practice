@@ -5,6 +5,6 @@ export const data = [{
     id: 2,
     step : `Make Cool Project`,
 },{
-    id: 1,
+    id: 3,
     step : `Get Hired`,
 }]
