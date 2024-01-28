@@ -18,6 +18,10 @@ const StepForm = () => {
         </div>
         <div className='stepForm__center'>
             <p>
+                {
+                   `Step ${data && data.filter(item => item.id === increment)[0]?.id} :` 
+                }
+                {" "}
                 { 
                     data && data.filter(item => item.id === increment)[0]?.step
                 }
