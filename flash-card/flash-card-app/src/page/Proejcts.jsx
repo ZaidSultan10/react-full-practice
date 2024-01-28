@@ -21,7 +21,7 @@ const Proejcts = () => {
     <section className='projects'>
         <div className='projects__buttons'>
             {projectButtons && projectButtons.map(button => (
-                <button key={button.id ? button.id : 'no-key'} onClick={() => button.id ? setProjectButton(() => button.name) : setProjectButton('')} className='projects__each__button'>{button.name}</button>
+                <button key={button.id ? button.id : 'no-key'} onClick={() => button.id ? setProjectButton(button.name) : setProjectButton('')} className='projects__each__button'>{button.name}</button>
             ))}
         </div>
         {
