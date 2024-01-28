@@ -10,6 +10,17 @@
   max-height: 100vh;
 }
 
+.projects__buttons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
+}
+
+.projects__each__button{
+  margin: 1rem;
+}
+
 .stepForm__main{
   display: flex;
   background-color: #efeded;

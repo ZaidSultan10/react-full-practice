@@ -8,3 +8,14 @@ export const data = [{
     id: 3,
     step : `Get Hired`,
 }]
+
+export const projectButtons = [{
+    id : 1,
+    name : `StepForm`
+},{
+    id : 2,
+    name : `DateCounter`
+},{
+    id : null,
+    name : `Reset`
+}]
