@@ -21,7 +21,7 @@
   margin: 1rem;
 }
 
-.stepForm__main{
+.stepForm__main, .dateCounter{
   display: flex;
   background-color: #efeded;
   width: 400px;
@@ -34,7 +34,7 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.stepForm__top{
+.stepForm__top, .dateCounter__counter, .dateCounter__steps{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,13 +65,13 @@
   color: white;
 }
 
-.stepForm__center{
+.stepForm__center, .dateCounter__date{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.stepForm__center > p{
+.stepForm__center > p ,.dateCounter__counter > p, .dateCounter__steps > p{
   color: rgb(46, 46, 46);
   font-size: 20px;
   font-style: italic;
