@@ -57,3 +57,12 @@
     width: 150px;
     cursor: pointer;
 }
+
+.searchBar__button > button:hover{
+    background: rgba(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.searchBar__button > button[disabled]{
+    background: rgb(169, 169, 169);
+}
