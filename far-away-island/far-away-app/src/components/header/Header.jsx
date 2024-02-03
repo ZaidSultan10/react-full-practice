@@ -1,8 +1,11 @@
 import React from 'react'
+import "./_header.css"
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <section className='header'>
+        <h3>{`🏝️ FAR-AWAY ISLAND 🏝️`}</h3>
+    </section>
   )
 }
 
