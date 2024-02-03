@@ -22,7 +22,7 @@ const SearchBar = () => {
             <p>{`What do you need for your trip 🌈`}</p>
         </div>
         <SearchBarInput type={`text`} classname={`searchBar__input__text`} placeholder={`Enter item...`} value={item} change={setItem} />
-        <SearchBarInput type={`number`} classname={`searchBar__input__quantity`} placeholder={``} value = {quantity} change={setQuantity} />
+        <SearchBarInput min = {"0"} maxLength = {"2"} type={`number`} classname={`searchBar__input__quantity`} placeholder={``} value = {quantity} change={setQuantity} />
         <div className='searchBar__button'>
             <button disabled = {!item || (parseInt(quantity) <= 0)} onClick={handleItemAddition}>{`Add`}</button>
         </div>

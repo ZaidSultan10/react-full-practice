@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SearchBarInput = ({type, classname, placeholder, value, change}) => {
+const SearchBarInput = ({min, maxLength,type, classname, placeholder, value, change}) => {
   return (
     <div className={classname}>
-        <input type={type} placeholder={placeholder} value={value} onChange={(e) => change(e.target.value)} />
+        <input min={min} type={type} placeholder={placeholder} value={value} onChange={(e) => change(e.target.value)} />
     </div>
   )
 }
