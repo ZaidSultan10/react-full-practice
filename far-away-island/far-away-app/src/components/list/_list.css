@@ -9,4 +9,54 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list__container{
+    /* display: flex; */
+    border: 1px solid;
+    width: auto;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.list__item, .list__actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__actions{
+    margin: 0 2px;
+}
+
+.list__actions > button {
+    padding: 2px;  
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.list__item{
+    margin-top: 4px;
+}
+.list__item > input {
+    height: 20px !important;
+    width: 25px !important;
+}
+
+.list__item > p {
+    color: rgba(41, 41, 41, 0.75);
+    font-weight: 500;
+    font-size: 18px;
 }

@@ -14,3 +14,9 @@
     bottom:0;
     right:0;
 }
+
+.footer > p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
