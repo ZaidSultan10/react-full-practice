@@ -3,9 +3,9 @@ import './_list.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle, faHamburger } from '@fortawesome/free-solid-svg-icons'
 
-const ListItem = () => {
+const ListItem = ({name, status}) => {
   return (
-    <div className='list__container'>
+    <div key={name} className='list__container'>
         <div className='list__actions'>
             <button>
                 <FontAwesomeIcon style={{color:'rgba(68, 68, 68, 0.4)'}} icon = {faTimesCircle} />
@@ -16,7 +16,7 @@ const ListItem = () => {
         </div>
         <div className='list__item'>
             <input type='checkbox' />
-            <p>2 biscuitssss</p>
+            <p>{name}</p>
         </div>
     </div>
   )
