@@ -86,12 +86,12 @@
 
 button{
   height: 35px;
-  width: 100px;
   border-radius: 999px;
   border: none;
   background-color: blueviolet;
   cursor: pointer;
   color: white;
+  padding: 8px 16px;
   
 }
 

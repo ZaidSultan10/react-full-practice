@@ -16,6 +16,9 @@ export const projectButtons = [{
     id : 2,
     name : `DateCounter`
 },{
+    id : 3,
+    name : `FlashCardGame`
+},{
     id : null,
     name : `Reset`
 }]

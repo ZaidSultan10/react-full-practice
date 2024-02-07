@@ -4,6 +4,7 @@ import { useState } from 'react'
 import StepForm from '../components/StepForm'
 import DateCounter from '../components/DateCounter'
 import Warning from '../components/Warning'
+import FlashCardGame from '../components/FlashCardGame'
 
 const Proejcts = () => {
     const [projectButton, setProjectButton] = useState('')
@@ -13,6 +14,8 @@ const Proejcts = () => {
                 return (<StepForm />);
             case 'DateCounter':
                 return (<DateCounter />);
+            case 'FlashCardGame':
+                return (<FlashCardGame />)
             default:
                 return (<Warning message = {`Please Click On Any Project To View It's Details`} />);
         }
