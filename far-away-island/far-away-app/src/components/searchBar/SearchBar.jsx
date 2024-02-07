@@ -15,7 +15,7 @@ const SearchBar = () => {
         const data = {
             quantity,
             item,
-            id : !list.length ? (list.length + 1) : (list[list - 1]?.id + 1)
+            id : !list.length ? (list.length + 1) : (list[list.length - 1]?.id + 1)
         }
         dispatch(getList(data))
         setItem('')

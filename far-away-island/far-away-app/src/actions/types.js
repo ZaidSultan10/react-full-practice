@@ -1,3 +1,5 @@
 export const GET_LIST = "GET_LIST"
 export const DELETE_ITEM = "DELETE_ITEM"
 export const CLEAR_LIST = "CLEAR_LIST"
+export const SORT_ID = "SORT_ID"
+export const ITEM_STATUS = "ITEM_STATUS"

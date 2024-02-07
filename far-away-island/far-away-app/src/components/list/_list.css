@@ -54,6 +54,10 @@
     cursor: pointer;
 }
 
+.list__action__completed{
+    border: 1px solid green;
+}
+
 .list__item{
     margin-top: 4px;
 }

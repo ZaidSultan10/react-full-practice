@@ -3,15 +3,22 @@ import './_list.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle, faHamburger } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from 'react-redux'
-import { deleteItem } from '../../actions/list'
+import { deleteItem, itemStatus, sortIds } from '../../actions/list'
 
-const ListItem = ({id ,name, status}) => {
+const ListItem = ({id ,name, status, listLength}) => {
     const dispatch = useDispatch()
     const handleDelete = (id) => {
         dispatch(deleteItem(id))
+        if(listLength > 1){
+            dispatch(sortIds(id))
+        }
+    }
+
+    const handleStatus = () => {
+        dispatch(itemStatus({id : id, status: status === 'Pending' ? "Completed" : "Pending"}))
     }
   return (
-    <div key={id} className='list__container'>
+    <div key={id} className={`list__container ${status === 'Completed' ? 'list__action__completed' : ''}`}>
         <div className='list__actions'>
             <button onClick={() => handleDelete(id)}>
                 <FontAwesomeIcon style={{color:'rgba(68, 68, 68, 0.4)'}} icon = {faTimesCircle} />
@@ -21,7 +28,7 @@ const ListItem = ({id ,name, status}) => {
             </button>
         </div>
         <div className='list__item'>
-            <input type='checkbox' />
+            <input checked = {status === 'Completed'} type='checkbox' onChange={handleStatus}/>
             <p>{name}</p>
         </div>
     </div>
