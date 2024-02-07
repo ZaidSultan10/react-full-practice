@@ -10,7 +10,7 @@ const List = () => {
     <section className='list'>
         <div className='list__main'>
             {list && list.length > 0 ? list.map(item => (
-                <ListItem name = {item.name} status = {item.status} />
+                <ListItem id = {item.id} name = {item.name} status = {item.status} />
             )) : ``}
         </div>
     </section>
