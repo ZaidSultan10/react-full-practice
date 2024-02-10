@@ -2,7 +2,7 @@ import React from 'react'
 
 const FlashCardGame = () => {
   return (
-    <div>FlashCardGame</div>
+    <div>FlashCardGames</div>
   )
 }
 
