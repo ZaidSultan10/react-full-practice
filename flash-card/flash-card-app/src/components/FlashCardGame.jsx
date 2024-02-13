@@ -16,7 +16,7 @@ const FlashCardGame = () => {
             <div onClick={() => handleAnswer(item.id)} style={{backgroundColor:`${displayAnswers.includes(item.id) ? 'yellow' : 'green'}`, height : "200px",
              borderRadius : '8px', padding:'8px', margin : '8px', display:'flex',
              justifyContent:'center',alignItems:'center', cursor:'pointer'}}>
-                <p style={{color : `${displayAnswers.includes(item.id) ? 'black' : 'white'}`, fontStyle:'italic'}}>{displayAnswers.includes(item.id) ? item.answer : item.question}</p>
+                <p style={{color : `${displayAnswers.includes(item.id) ? 'black' : 'white'}`, fontStyle:'bold'}}>{displayAnswers.includes(item.id) ? item.answer : item.question}</p>
             </div>
         ))}
     </main>
